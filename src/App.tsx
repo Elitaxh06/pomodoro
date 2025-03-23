@@ -5,6 +5,7 @@ function App() {
 
   return (
     <>
+      <h2 className='text-center mt-3 font-bold text-5xl'>Pomodoro Timer | ElItAxH</h2>
       <Home />
     </>
   )
