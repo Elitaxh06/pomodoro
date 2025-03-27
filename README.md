@@ -9,13 +9,16 @@ Este proyecto está listado en Roadmap.sh. Puedes verlo aquí:
 ## 📌 Características  
 ✅ Temporizador Pomodoro funcional  
 ✅ UI minimalista con TailwindCSS  
-✅ Sonidos o notificaciones al finalizar una sesión (opcional)  
+✅ Notificaciones al finalizar una sesión
 ✅ Soporte para múltiples duraciones  
 
 ## 🛠 Tecnologías utilizadas  
 - React + TypeScript  
 - TailwindCSS  
-- Vite  
+- Vite
+
+## 📌 Estructura del proyecto  
+Este proyecto **no utiliza una estructura basada en múltiples componentes reutilizables**. Solo se han utilizado **dos componentes principales**, manteniendo el código simple y directo. 
 
 ## 📦 Instalación  
 1. Clonar el repositorio:  
