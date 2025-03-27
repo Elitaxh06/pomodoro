@@ -73,7 +73,7 @@ function Todo() {
     
     return(
         <section className="mt-20 ml-5 h-[calc(100vh-150px)] flex flex-col mr-8">
-            <h1 className="text-4xl text-center font-semibold mb-4">Lista de tareas</h1>
+            <h1 className="text-4xl text-center font-semibold mb-4">Task Management</h1>
             <div className="flex gap-4 items-center">
                 <form onSubmit={addTask} className="mt-4 mb-4">
                     <input
@@ -81,10 +81,10 @@ function Todo() {
                     type="text" 
                     value={newTask}
                     onChange={(e) => setNewTask(e.target.value)}
-                    placeholder="Agregar Tarea"
+                    placeholder="Add Task"
                     />
                 </form>
-                <button onClick={addTask} className="border border-green-800 rounded-lg w-32 h-12 bg-gray-600 cursor-pointer hover:scale-105 transition-transform hover:border-green-300 hover:text-sky-300 hover:bg-gray-500">Agregar</button>
+                <button onClick={addTask} className="border border-green-800 rounded-lg w-32 h-12 bg-gray-600 cursor-pointer hover:scale-105 transition-transform hover:border-green-300 hover:text-sky-300 hover:bg-gray-500">Add</button>
             </div>
             <div className="flex gap-4 items-center mt-3 mb-4">
                 <input 
@@ -92,12 +92,12 @@ function Todo() {
                     type="" 
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                    placeholder="Buscar tareas"
+                    placeholder="Search Tasks"
                     />
                     <select value={filter} onChange={(e) => setFilter(e.target.value)} className="bg-gray-700 rounded-xl w-32 h-8 placeholder:text-center text-center  hover:scale-105 transition-transform hover:border border-green-300 cursor-pointer">
-                        <option value="todas">Todas</option>   
-                        <option value="complete">Completadas</option>
-                        <option value="pending">Pendientes</option>
+                        <option value="todas">All</option>   
+                        <option value="complete">Completed</option>
+                        <option value="pending">Pending</option>
                     </select>
             </div>
             
@@ -123,7 +123,7 @@ function Todo() {
                             </div>
                         </li>
                     ))}
-                    {filterTasks().length === 0 && <p className='text-center text-xl font-bold'>No hay tareas para mostrar</p>}
+                    {filterTasks().length === 0 && <p className='text-center text-xl font-bold'>Dont have any tasks to show</p>}
                 </ul>
             </div>
         </section>

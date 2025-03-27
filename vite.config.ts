@@ -4,4 +4,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  base: 'https://elitaxh06.github.io/pomodoro'
 })
